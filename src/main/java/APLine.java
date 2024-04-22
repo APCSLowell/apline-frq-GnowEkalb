@@ -6,11 +6,11 @@ public class APLine
     B = b;
     C = c;
   }
-  private double getSlope(){
-    return (double)-A/B;
+  public double getSlope(){
+    return -(double)A/B;
   }
-  private boolean isOnLine(int x, int y){
-    if (A*x+B*y+C == 0)
+  public boolean isOnLine(int x, int y){
+    if (A*x + B*y + C == 0)
       return true;
     return false;
   }
